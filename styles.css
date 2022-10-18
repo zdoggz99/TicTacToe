@@ -1,0 +1,50 @@
+:root {
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+  font-family: "Roboto", sans-serif;
+  --boardContainerSize: 40rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.header {
+  width: 100%;
+  font-size: 60px;
+  text-align: center;
+  background-color: darkgrey;
+  padding: 20px;
+}
+
+.boardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 5rem;
+  width: calc(var(--boardContainerSize) + 1rem);
+  height: calc(var(--boardContainerSize) + 1rem);
+  background-color: darkgray;
+  background-clip: content-box, padding-box;
+}
+
+.playSpace {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  scale: 1.01;
+}
+
+.playSpace:hover {
+  scale: 1.02;
+  cursor: pointer;
+}
+
+.playSpace:active {
+  scale: 1.01;
+}
